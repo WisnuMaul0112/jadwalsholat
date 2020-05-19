@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundhomei">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="30dp"
+            android:text="Jakarta"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="110dp"
+            android:text="Rabu, 28 January 2020"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDate"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:shape="rectangle"
+            android:text="Pilih Tanggal"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:layout_marginTop="10dp"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:padding="20dp"
+            android:id="@+id/jadwal_container"
+            android:layout_width="match_parent"
+            android:layout_height="395dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:fontFamily="Trebuchet MS"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Subuh:  "/>
+
+                <TextView
+                    android:id="@+id/shubuh_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="Trebuchet MS"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:fontFamily="Trebuchet MS"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Dzuhur:  "/>
+
+                <TextView
+                    android:id="@+id/dzuhur_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="Trebuchet MS"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:fontFamily="Trebuchet MS"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Ashar:  "/>
+
+                <TextView
+                    android:id="@+id/ashar_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="Trebuchet MS"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:fontFamily="Trebuchet MS"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Magrib:  "/>
+
+                <TextView
+                    android:id="@+id/magrib_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="Trebuchet MS"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:fontFamily="Trebuchet MS"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Isya:  "/>
+
+                <TextView
+                    android:id="@+id/isya_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="Trebuchet MS"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
